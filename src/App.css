@@ -5,12 +5,15 @@ body{
   background-color: rgb(203, 224, 224);
   margin-top: 10vh;
   z-index: 1000;
+  overflow-x: hidden;
   
 }
 
 @media(max-width:600px) {
   body{
     margin-top: 14vh;
+    overflow-x: hidden;
+    
   }
   
 }
