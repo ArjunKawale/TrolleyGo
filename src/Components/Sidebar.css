@@ -1,0 +1,45 @@
+
+.sidebarbase {
+    width: 25vw;
+    height: 100vh;
+    background-color:whitesmoke;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 1001;
+    transition: left 0.5s ease-in-out;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;}
+  
+  .sidebarbase.open {
+    left: 0; 
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, background-color 1s ease-in-out;
+    z-index: 1000;
+  }
+  
+  
+  .overlay.open {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+   
+  }
+  
+  @media(max-width:600px){
+    .sidebarbase{
+      width:80vw;
+    }
+  }
+  
