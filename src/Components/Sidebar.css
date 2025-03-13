@@ -8,8 +8,7 @@
     top: 0;
     z-index: 1001;
     transition: left 0.5s ease-in-out;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;}
+  }
   
   .sidebarbase.open {
     left: 0; 

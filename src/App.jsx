@@ -4,6 +4,7 @@ import {Header} from "./Components/Header";
 import {Sidebar} from "./Components/Sidebar";
 import { ImageBar } from './Components/ImageBar';
 import { ProductCards } from './Components/ProductCards';
+import { Footer } from './Components/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
    <Sidebar value={value} onClose={() => setvalue(false)}/>
    <ImageBar/>
    <ProductCards/>
+   <Footer/>
    </>
   );
 }
