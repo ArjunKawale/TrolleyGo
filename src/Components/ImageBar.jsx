@@ -11,7 +11,7 @@ import "./ImageBar.css";
 
 export const ImageBar = () => {
   const [index, setIndex] = useState(0);
-  const slides = [img1, img2, img3, img4];
+  const slides = [img2, img3, img4, img1];
   const currentImage = slides[index];
   const gotoprevious = () => {
     setIndex((prevIndex) =>
