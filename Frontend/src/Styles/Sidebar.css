@@ -1,0 +1,167 @@
+/* Sidebar Base */
+.sidebarbase {
+  width: 25vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  z-index: 1001;
+  transition: left 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarbase.open {
+  left: 0;
+}
+
+/* Welcome Section */
+.Welcome {
+  height: 35vh;
+  background-color: rgb(31, 32, 31);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Profile Icon */
+.profile-icon {
+  font-size: 18vh;
+  color: white;
+  margin-bottom: 1vh;
+}
+
+/* Username */
+.username {
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+/* Sidebar Content */
+.sidebar-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Items */
+.dashboard,
+.history,
+.orders {
+  font-size: 3.5vh;
+  padding: 2vh 2vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+/* Hover Effects */
+.dashboard:hover {
+  background-color: #e3f2fd;
+}
+
+.history:hover {
+  background-color: #fce4ec;
+}
+
+.orders:hover {
+  background-color: #f3e5f5;
+}
+
+/* Logout Button */
+.logout {
+  color: rgb(133, 0, 0);
+  font-size: 3.5vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 2vh 2vw;
+  margin-top: auto;
+  background-color: whitesmoke;
+}
+
+.logout:hover {
+  background-color: rgb(200, 0, 0);
+  color: white;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 4vh;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, background-color 1s ease-in-out;
+  z-index: 1000;
+}
+
+.overlay.open {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 📌 Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .sidebarbase {
+    width: 80vw;
+  }
+
+  .Welcome {
+    height: 30vh;
+  }
+
+  .profile-icon {
+    font-size: 12vh;
+  }
+
+  .username {
+    font-size: 3vh;
+  }
+
+  .dashboard,
+  .history,
+  .orders,
+  .logout {
+    font-size: 3vh;
+    padding: 1.5vh 3vw;
+  }
+}
+
+/* 📌 Extra Small Screens (Phones below 480px) */
+@media (max-width: 480px) {
+  .sidebarbase {
+    width: 90vw;
+  }
+
+  .Welcome {
+    height: 28vh;
+  }
+
+  .profile-icon {
+    font-size: 10vh;
+  }
+
+  .username {
+    font-size: 2.8vh;
+  }
+
+  .dashboard,
+  .history,
+  .orders,
+  .logout {
+    font-size: 2.5vh;
+    padding: 1.2vh 4vw;
+  }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body{
+  background-color: rgb(227, 234, 234);
+  z-index: 1000;
+  overflow-x: hidden;
+  
+}
+
+@media(max-width:600px) {
+  body{
+    overflow-x: hidden;
+    
+  }
+  
+}
+

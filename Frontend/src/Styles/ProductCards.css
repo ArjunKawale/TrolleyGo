@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.categoryName {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  margin: 2vw 2vw 0 2vw;
+}
+.searchProducttitle{
+  height:12vh;
+ display: flex;
+ align-items: center;
+ margin-top: 10vh;
+ font-size: 2rem;
+ margin-left: 2vw;
+}
+
+.noP{
+  font-size: 2rem;
+  margin-left: 2vw;
+  width: 50vw;
+}
+.divider {
+  margin: 0 2vw;
+  top: 0;
+}
+
+.productcard {
+  height: 55vh;
+  width: 18vw;
+  background-color: white;
+  justify-self: center;
+  margin-top: 1vw;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* ✅ Image container to prevent overflow */
+.image-container {
+  width: 100%;
+  height: 60%; /* Same height as your original img */
+  overflow: hidden; /* Prevents zoom overflow */
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+}
+
+.structure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-content: center;
+  overflow: hidden;
+}
+
+.structure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease-in-out;
+  position: absolute; /* Keeps image inside container */
+  left: 0;
+  top: 0;
+}
+
+/* ✅ Ensures zoom only inside the container */
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.productname {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-left: 1vw;
+  font-size: clamp(12px, 2rem, 22px);
+  padding-top: 2vh;
+}
+
+.productprice {
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 1.5vh 0;
+}
+
+.cardfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 2vw;
+  margin-top: 2vh;
+}
+
+.addtocarticon {
+  width: 80px;
+  height: 40px;
+  font-size: 1rem;
+  border: 2px solid rgb(62, 209, 222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default Add button */
+.add {
+  background-color: white;
+  color: rgb(62, 209, 222);
+}
+
+/* Add button hover effect */
+.add:hover {
+  background-color: rgb(86, 223, 236);
+  color: white;
+}
+
+/* Added to Cart button */
+.added-to-cart {
+  background-color: rgb(62, 209, 222);
+  color: white;
+  
+}
+
+/* Added to Cart button hover effect */
+.added-to-cart:hover {
+  background-color: rgb(50, 170, 180);
+  
+}
+
+@media (max-width: 600px) {
+  .productcard {
+    height: 40vh;
+    width: 43vw;
+    background-color: white;
+    justify-self: center;
+    margin-top: 3vw;
+  }
+  .structure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    place-content: center;
+    
+  }
+  .addtocarticon {
+   width: 20vw;
+  }
+  .productprice {
+    font-size: 1rem;
+  }
+  .productname {
+    font-size: 4.3vw;
+    font-weight: bold;
+    margin-top: 1vh;
+    margin-left: 2vw;
+  }
+  
+  
+  
+  .cardfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    margin-top: 1vh;
+  }
+}
+

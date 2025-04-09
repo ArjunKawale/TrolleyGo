@@ -1,0 +1,65 @@
+.category-nav-wrapper {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 10vh;
+    z-index: 1000;
+    background-color: rgb(44, 44, 44,90%);
+    padding: 10px;
+    height:5vh;
+}
+
+.mainCatnav {
+    display: flex;
+    gap: 5vw;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-grow: 1;
+}
+
+.mainCatnav::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: rgb(44, 44, 44,0%);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.cat-button:hover {
+    text-decoration: underline;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+    background-color: rgb(44, 44, 44,0%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5rem;
+    opacity: 50%;
+    transition: 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: rgb(54, 54, 54);
+    opacity: 100%;
+
+}
+
+.scroll-btn.left {
+    margin-right: 10px;
+}
+
+.scroll-btn.right {
+    margin-left: 10px;
+}

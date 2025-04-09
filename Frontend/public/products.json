@@ -1,0 +1,59 @@
+[
+    {
+      "category": "Fruits",
+      
+      "products": [
+        { "id": 1, "name": "Apple", "price": 50 ,"image": "/Imaages/banana.jpg"},
+        { "id": 2, "name": "Banana", "price": 30 ,"image": "/Imaages/banana.jpg" },
+        { "id": 3, "name": "Orange", "price": 40  ,"image": "/Imaages/banana.jpg"},
+        { "id": 4, "name": "Grapes", "price": 60  ,"image": "/Imaages/banana.jpg"},
+        { "id": 5, "name": "Pineapple", "price": 80 ,"image": "/Imaages/banana.jpg"},
+        { "id": 6, "name": "Mango", "price": 100 ,"image": "/Imaages/banana.jpg"},
+        { "id": 7, "name": "Strawberry", "price": 120 ,"image": "/Imaages/banana.jpg"},
+        { "id": 8, "name": "Pomegranate", "price": 90,"image": "/Imaages/banana.jpg" }
+      ]
+    },
+    {
+      "category": "Dairy",
+      
+      "products": [
+        { "id": 9, "name": "Milk", "price": 70,"image": "/Imaages/milk.jpg" },
+        { "id": 10, "name": "Cheese", "price": 200,"image": "/Imaages/milk.jpg" },
+        { "id": 11, "name": "Butter", "price": 150 ,"image": "/Imaages/milk.jpg"},
+        { "id": 12, "name": "Yogurt", "price": 80 ,"image": "/Imaages/milk.jpg"},
+        { "id": 13, "name": "Paneer", "price": 120 ,"image": "/Imaages/milk.jpg"},
+        { "id": 14, "name": "Ghee", "price": 300 ,"image": "/Imaages/milk.jpg"},
+        { "id": 15, "name": "Cream", "price": 180 ,"image": "/Imaages/milk.jpg"},
+        { "id": 16, "name": "Condensed Milk", "price": 250 ,"image": "/Imaages/milk.jpg"}
+      ]
+    },
+    {
+      "category": "Vegetables",
+      
+      "products": [
+        { "id": 17, "name": "Carrot", "price": 40,"image": "/Imaages/gourd.jpg" },
+        { "id": 18, "name": "Broccoli", "price": 60,"image": "/Imaages/gourd.jpg"  },
+        { "id": 19, "name": "Spinach", "price": 30 ,"image": "/Imaages/gourd.jpg" },
+        { "id": 20, "name": "Tomato", "price": 35 ,"image": "/Imaages/gourd.jpg" },
+        { "id": 21, "name": "Cucumber", "price": 25 ,"image": "/Imaages/gourd.jpg" },
+        { "id": 22, "name": "Potato", "price": 20 ,"image": "/Imaages/gourd.jpg" },
+        { "id": 23, "name": "Onion", "price": 25 ,"image": "/Imaages/gourd.jpg" },
+        { "id": 24, "name": "Capsicum", "price": 50,"image": "/Imaages/gourd.jpg"  }
+      ]
+    },
+    {
+      "category": "Bakery",
+     
+      "products": [
+        { "id": 25, "name": "Bread", "price": 40 , "image": "/Imaages/bread.jpg"},
+        { "id": 26, "name": "Croissant", "price": 80 , "image": "/Imaages/bread.jpg"},
+        { "id": 27, "name": "Muffin", "price": 60, "image": "/Imaages/bread.jpg" },
+        { "id": 28, "name": "Doughnut", "price": 50 , "image": "/Imaages/bread.jpg"},
+        { "id": 29, "name": "Bagel", "price": 70, "image": "/Imaages/bread.jpg" },
+        { "id": 30, "name": "Cake", "price": 250 , "image": "/Imaages/bread.jpg"},
+        { "id": 31, "name": "Bun", "price": 30, "image": "/Imaages/bread.jpg" },
+        { "id": 32, "name": "Cookies", "price": 90 , "image": "/Imaages/bread.jpg"}
+      ]
+    }
+  ]
+  

@@ -1,0 +1,90 @@
+/* Apply background only to login and register pages */
+.auth-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../Images/groc2.jpg'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Black overlay for tint effect */
+.auth-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black tint */
+  z-index: 0;
+}
+
+/* Form container with separate opacity */
+.form-container {
+  position: relative;
+  z-index: 1;
+  background: rgba(181, 181, 181, 0.5); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  color: white;
+  /* Centering content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Adds spacing between elements */
+  width: 90%;
+}
+
+/* Fully visible input fields */
+.form-input {
+  width: 100%;
+  background: white; /* Ensure input background remains solid */
+  color: black; /* Ensure text is fully visible */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: left; /* Align input text to the left */
+}
+
+/* Fully visible button */
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #48a14e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+  text-align: center;
+}
+
+.form-button:hover {
+  background-color:#54ba5b;
+}
+
+/* Fully visible text */
+.navigate-text {
+  font-size: 14px;
+  text-align: center;
+  color:white;
+}
+
+.navigate-text a {
+  color:rgb(0, 255, 81);
+  text-decoration: none;
+}
+
+.navigate-text a:hover {
+  text-decoration: underline;
+}

@@ -1,2 +1,1 @@
-This is a React based Grocery Website Project.
-Luck you!
+This is a Grocery Website Project utilizing React Django Rest and PostgreSql.

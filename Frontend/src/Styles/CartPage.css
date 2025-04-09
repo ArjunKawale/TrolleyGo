@@ -1,0 +1,208 @@
+.productholder{
+    width: 96vw;
+    background-color: white;
+    margin-left: 2vw;
+    height: 20vh;
+    margin-top: 2.5vh;
+    box-shadow: 2px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr ;
+
+}
+.headings{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    margin-left: 2vw;
+    
+    margin-right: 2vw;
+    place-items: center;
+    
+    margin-top: 15vh;
+    font-size: 3vh;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+
+
+.imgandname{
+  display: flex;
+  /* background-color: red; */
+  height:20vh;
+  justify-content: flex-start;
+
+}
+/* body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} */
+.cartimgholder{
+    display: flex;
+    justify-content: flex-start;
+    height:20vh;
+    /* background-color: blue; */
+    width: 50%;
+   
+}
+.cartimgholder img{
+    width: 9.3vw; /* Ensures the image doesn't exceed the container's width */
+    height: 20vh;
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-start;
+}
+.cancelButton{
+    height:7vh;
+    width: 8vw;
+    background-color: red;
+    margin-left:4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.cartproductname{
+    /* height:100%; */
+    font-size: 5vh;
+    padding-left: 2vw;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    width:50%;
+}
+
+.singleproductprice{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.subtotal{
+    height:50%;
+    font-size: 4vh;
+   cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position:relative;
+    
+}
+
+
+.BackButton{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 2vw;
+    margin-top: 12vh;
+    font-weight: 100;
+    height: 10vh;
+}
+.msg{
+    margin-left: 1vw;
+    font-size: 2rem;
+    height: 7.8vh;
+} 
+.cartproductquantity{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty-cart{
+    font-size: 2vw;
+    margin:2vw;
+}
+.deletebutton{
+    width:6vw ;
+    margin-top:2vh;
+    font-size: 4vh;
+    border-radius: 1vh;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:6vh;
+    margin-left: 6vw;
+    z-index: 10001;
+}
+.quantity{
+    font-size: 5vh;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.incrementbutton {
+    width: 4vw;
+    height: 5vh;
+    background-color: rgb(62, 209, 222);
+    color: white;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 6vh; /* Match the height */
+    text-align: center;
+}
+
+.decrementbutton{
+    width: 4vw;
+    height: 5vh;
+    background-color: rgb(62, 209, 222);
+    color: white;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 6vh; /* Match the height */
+    text-align: center;
+}
+
+.total-price {
+    margin-top: 2vh;
+    display: flex;
+    height: 15vh;
+    background-color: rgb(31, 32, 31);
+    color: white;
+    align-items: center;
+    width: 100%;
+    /* Removed: position: sticky */
+  }
+.cart-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .holdered {
+    flex-grow: 1;
+  }
+.Buybutton{
+    height:7vh;
+    width: 8vw;
+    background-color: green;
+    margin-left:60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.Buybutton:hover{
+    background-color:rgb(0, 145, 0);
+}
+.totalPrice{
+    margin-right: 4vw;
+    margin-left: auto;
+    font-size: 4vh;
+}

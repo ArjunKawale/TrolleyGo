@@ -1,0 +1,256 @@
+/* General container styling */
+.admin-container {
+  padding: 20px;
+  margin-top: 10vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.admin-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Tab buttons styling */
+.tab-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
+}
+
+/* Add New Product button styling */
+.add-button {
+  padding: 10px 15px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  margin-bottom: 15px;
+}
+
+.add-button:hover {
+  background-color: #138496;
+  transform: scale(1.05);
+}
+
+/* Table container */
+.table-container {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+  padding: 8px;
+  width: 250px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+/* Table styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: rgb(97, 97, 97);
+  color: white;
+}
+
+/* Button styling */
+.edit-button {
+  background-color: #218838;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.delete-button {
+  background-color: #c82333;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-left: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+.delete-button:hover {
+  background-color: #a71d2a;
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-height: 80vh; /* Restricts modal height */
+  overflow-y: auto; /* Enables scrolling */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Custom Scrollbar */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+ height: 30px;  /* Ensures the scroller is at least 30px tall */
+   /* Limits the scroller size */
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Product Form Styling */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-group input[type="file"] {
+  padding: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.form-buttons button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
