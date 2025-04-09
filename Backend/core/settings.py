@@ -27,7 +27,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-m+-y*=u%w+gx$$9j4gyntu52rc+j^!hqg&wfw6r=gybv2(q6hf'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -68,7 +68,7 @@ ROOT_URLCONF = 'core.urls'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000"
-    ,"http://192.168.51.105:3000"
+    
 ]
 
 TEMPLATES = [
@@ -97,8 +97,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'TrolleyGo',
-        'USER': 'postgres',
-        'PASSWORD': 'postgrespassword',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432'
     }
