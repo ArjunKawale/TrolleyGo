@@ -4,7 +4,7 @@
 
 It features a custom admin interface for managing products and categories (CRUD), along with a user-facing frontend for browsing/buying groceries.
 
-**Video Demo :** https://www.youtube.com/watch?v=fKyrmk1aF3o
+**Video Demo**: https://www.youtube.com/watch?v=fKyrmk1aF3o
 
 ---
 
